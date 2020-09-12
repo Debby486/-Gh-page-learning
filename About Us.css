@@ -11,10 +11,10 @@ button{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) ),url("https://images.unsplash.com/photo-1511881220587-13b89d1da6b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
     background-size: cover;
 }
-.details-style{
+ .details-style{
     display: flex;
     justify-content: space-around;
-}
+} 
 /* .thumbnail{
     height: 50px;
     width: 50px;
@@ -141,6 +141,29 @@ button{
     margin-right: 30px;
     
 }
+{
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
 /* .Test{
     border-collapse:separate;
     border-spacing:70px 0px;  
